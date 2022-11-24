@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+  font-size: large;
+}
+#navbar {
+  /* background-color: black; */
+  color: white;
+  display: flex;
+  height: 80px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(215, 66, 66),
+    rgb(13, 13, 221),
+    rgb(19, 136, 136)
+  );
+}
+#logo {
+  color: white;
+  display: flex;
+}
+#logo img {
+  padding: 10px;
+}
+#logo p {
+  margin: auto;
+  margin-right: 10px;
+}
+#nav-options {
+  display: flex;
+}
+#nav-options a {
+  color: white;
+  margin: auto;
+  margin-left: 20px;
+}
+
+#top-bar p {
+  text-align: center;
+}
+#NCC-img {
+  width: 100%;
+}
+
+#about h2 {
+  text-align: center;
+}
+.underline {
+  border-top: 5px red solid;
+  width: 100px;
+  height: 0%;
+  margin: auto;
+  margin-top: -20px;
+}
+#about p {
+  padding-left: 150px;
+  padding-right: 150px;
+  text-align: justify;
+}
+#social-media {
+  display: flex;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: blue;
+  justify-content: space-between;
+}
+#social-media p {
+  color: white;
+  font-size: 25px;
+}
+#sm-logo {
+  display: flex;
+}
+#sm-logo div {
+  margin: auto;
+  margin-left: 20px;
+  color: white;
+}
