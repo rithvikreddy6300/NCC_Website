@@ -1,0 +1,31 @@
+body {
+  background-color: antiquewhite;
+}
+.img-frame {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  border: 2px solid black;
+  padding: 10px;
+  background-color: white;
+}
+.img-frame img {
+  width: 100%;
+  height: 80%;
+}
+.event-name {
+  text-align: center;
+  margin: 10px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  /* grid-auto-rows: 500px; */
+  width: 80%;
+  max-width: 1500px;
+  gap: 50px;
+  margin: 30px auto;
+  justify-content: center;
+  align-content: center;
+}
