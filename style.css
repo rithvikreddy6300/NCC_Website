@@ -9,9 +9,9 @@ body {
   height: 80px;
   background-image: linear-gradient(
     to bottom right,
-    rgb(215, 66, 66),
+
     rgb(13, 13, 221),
-    rgb(19, 136, 136)
+    rgb(215, 66, 66)
   );
 }
 #logo {
@@ -41,22 +41,21 @@ body {
   width: 100%;
 }
 
-#about h2 {
-  text-align: center;
-}
 .underline {
   border-top: 5px red solid;
-  width: 100px;
+  width: 150px;
   height: 0%;
   margin: auto;
   margin-top: -20px;
 }
-#about p {
-  padding-left: 150px;
-  padding-right: 150px;
-  text-align: justify;
+
+#pledge p {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 10px;
 }
 #social-media {
+  margin-top: 20px;
   display: flex;
   padding-left: 150px;
   padding-right: 150px;
@@ -70,8 +69,57 @@ body {
 #sm-logo {
   display: flex;
 }
-#sm-logo div {
+#sm-logo i {
   margin: auto;
-  margin-left: 20px;
+  margin-right: 20px;
   color: white;
+}
+.footer {
+  color: white;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.Flex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.Flex a {
+  color: white;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+#footer-logo {
+  width: 80px;
+}
+
+.side-img {
+  width: 25%;
+  padding: 20px;
+}
+.info-card {
+  margin-left: 15%;
+  margin-right: 15%;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  box-shadow: 10px 10px;
+}
+.info-card h2 {
+  text-align: center;
+}
+.info-card-content {
+  display: flex;
+}
+.info-card-content p {
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: justify;
 }
