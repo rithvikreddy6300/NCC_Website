@@ -1,16 +1,7 @@
 body {
   background-color: beige;
 }
-.heading {
-  height: 100px;
-  background-color: rgb(255, 255, 255);
-}
-h1 {
-  text-align: center;
-  margin: 0px;
-  padding: 25px;
-  font-size: 45px;
-}
+
 .member-info {
   max-width: 400px;
   margin: auto;

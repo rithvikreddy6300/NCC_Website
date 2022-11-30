@@ -242,9 +242,6 @@ footer {
 
 /* For responsiveness */
 @media only screen and (max-width: 1000px) {
-  body {
-    background-color: lightblue;
-  }
   #background {
     overflow: hidden;
     text-align: center;
@@ -300,4 +297,17 @@ footer {
     font-size: 12px;
     margin-left: 5px;
   }
+}
+
+/* Styles common to most of the pages */
+/* Page heading */
+.heading {
+  text-align: center;
+  background-color: white;
+}
+.heading h1 {
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 40px;
 }

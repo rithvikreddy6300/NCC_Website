@@ -1,16 +1,6 @@
 body {
   background-color: antiquewhite;
 }
-.heading {
-  text-align: center;
-  background-color: white;
-  height: 100px;
-}
-.heading h1 {
-  margin: 0px;
-  padding-top: 25px;
-  font-size: 40px;
-}
 .img-frame {
   display: flex;
   flex-direction: column;

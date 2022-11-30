@@ -4,3 +4,63 @@ body {
 .info-card {
   background-color: rgb(240, 240, 240);
 }
+.motto {
+  text-align: center;
+}
+.motto i {
+  font-size: 20px;
+  padding: 10px;
+}
+.motto p {
+  font-size: 30px;
+  font-style: oblique;
+}
+
+.core-values {
+  padding: 25px;
+}
+.point {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.point i {
+  padding-right: 10px;
+  padding-left: 20px;
+}
+.point p {
+  margin: 0;
+}
+#more-info {
+  background-color: rgb(252, 151, 44);
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+  padding: 5px;
+}
+#more-info p {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#more-info p a {
+  text-decoration: none;
+  color: white;
+}
+#more-info p a:hover {
+  color: black;
+}
+#social-media {
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .point i {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .core-values {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
