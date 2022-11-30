@@ -254,6 +254,7 @@ footer {
   }
   .info-card {
     width: 90%;
+    animation: none;
   }
   .info-card-content {
     flex-direction: column;
@@ -296,7 +297,7 @@ footer {
     font-size: 15px;
   }
   #nav-options a {
-    font-size: 15px;
+    font-size: 12px;
     margin-left: 5px;
   }
 }
