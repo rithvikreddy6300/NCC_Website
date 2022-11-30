@@ -288,8 +288,15 @@ footer {
   }
 }
 
-@media only screen and (max-width<800px) {
+@media only screen and (max-width: 800px) {
   #navbar {
     overflow: hidden;
+  }
+  #logo p {
+    font-size: 15px;
+  }
+  #nav-options a {
+    font-size: 5px;
+    margin-left: 5px;
   }
 }
