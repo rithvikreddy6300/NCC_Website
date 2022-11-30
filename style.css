@@ -36,12 +36,24 @@ body {
 #nav-options a:hover {
   color: rgb(200, 200, 200);
 }
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em white;
+  transform: translateY(-0.25em);
+}
 
 #top-bar p {
   text-align: center;
 }
+#background {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #NCC-img {
   width: 100%;
+  height: calc(100vh - 80px);
 }
 
 .underline {
@@ -57,53 +69,12 @@ body {
   margin-bottom: 0px;
   margin-top: 10px;
 }
-#social-media {
-  margin-top: 20px;
-  display: flex;
-  padding-left: 150px;
-  padding-right: 150px;
-  background-color: blue;
-  justify-content: space-between;
+#pledge > :last-child {
+  padding-bottom: 20px;
 }
-#social-media p {
-  color: white;
-  font-size: 25px;
-}
-#sm-logo {
-  display: flex;
-}
-#sm-logo i {
-  margin: auto;
-  margin-right: 20px;
-  color: white;
-}
-#footer {
-  color: white;
-  background-color: rgb(27, 27, 27);
-  display: flex;
-  justify-content: space-between;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-.Flex {
-  display: flex;
-  flex-direction: column;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-.Flex a {
-  color: white;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  text-decoration: none;
-}
-
-#footer-logo {
-  width: 80px;
-}
-
 .side-img {
   width: 25%;
+  height: calc(25% * 9 / 16);
   padding: 20px;
 }
 .info-card {
@@ -112,8 +83,18 @@ body {
   border: 2px solid black;
   border-radius: 20px;
   margin-bottom: 20px;
-  margin-top: 10px;
+  margin-top: 40px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.505);
+  animation-name: slide-right;
+  animation-duration: 1.5s;
+}
+@keyframes slide-right {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 15%;
+  }
 }
 .info-card h2 {
   text-align: center;
@@ -122,7 +103,7 @@ body {
   display: flex;
 }
 .info-card-content p {
-  padding-left: 50px;
+  padding-left: 20px;
   padding-right: 50px;
   text-align: justify;
 }
@@ -141,5 +122,159 @@ body {
 }
 
 #info-button a:hover {
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(220, 220, 220);
+}
+
+#social-media {
+  margin-top: 40px;
+  display: flex;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: blue;
+  justify-content: space-between;
+}
+#social-media p {
+  color: white;
+  font-size: 25px;
+}
+#sm-logo {
+  display: flex;
+}
+#sm-logo i {
+  margin: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: white;
+}
+
+#sm-logo a {
+  margin: auto;
+}
+#sm-logo i:hover {
+  font-size: 50px;
+  color: aquamarine;
+}
+
+footer {
+  color: white;
+  background-color: rgb(30, 30, 30);
+}
+#footer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+.org-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.org-info img {
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 30px;
+  width: 50px;
+}
+.org-info p {
+  margin: 0px;
+  color: rgb(200, 200, 200);
+  padding-bottom: 5px;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+}
+.quick-links h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.quick-links > :nth-child(2) {
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.quick-links a {
+  text-decoration: none;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.quick-links a:hover {
+  color: rgb(201, 201, 201);
+}
+.quick-links a:hover {
+  color: rgb(200, 200, 200);
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+}
+.contact-us h2 {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.contact-us > :nth-child(2) {
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.contact-us p {
+  margin: 0px;
+}
+.contact-us p i {
+  padding: 5px;
+  padding-right: 10px;
+}
+.copyrights {
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+.copyrights p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: rgb(200, 200, 200);
+}
+
+/* For responsiveness */
+@media only screen and (max-width: 1000px) {
+  body {
+    background-color: lightblue;
+  }
+  #background {
+    overflow: hidden;
+    text-align: center;
+  }
+  #NCC-img {
+    width: auto;
+  }
+  .info-card-content {
+    flex-direction: column;
+  }
+  .side-img {
+    margin: auto;
+    width: 70%;
+    height: calc(25% * 9 / 16);
+    padding: 20px;
+  }
+  #social-media {
+    flex-direction: column;
+  }
+  #social-media p {
+    text-align: center;
+  }
+  #sm-logo {
+    width: 70%;
+    margin: auto;
+    padding-bottom: 10px;
+    max-width: 200px;
+  }
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }

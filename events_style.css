@@ -1,3 +1,16 @@
+body {
+  background-color: beige;
+}
+.heading {
+  text-align: center;
+  background-color: white;
+  height: 100px;
+}
+.heading h1 {
+  margin: 0px;
+  padding-top: 25px;
+  font-size: 40px;
+}
 .events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -12,6 +25,7 @@
 .event {
   border: 2px solid black;
   border-radius: 10px;
+  background-color: white;
 }
 .event h2 {
   width: 100%;
