@@ -270,6 +270,8 @@ footer {
   }
   #social-media {
     flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   #social-media p {
     text-align: center;
@@ -283,5 +285,11 @@ footer {
   #footer {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width<800px) {
+  #navbar {
+    overflow: hidden;
   }
 }
