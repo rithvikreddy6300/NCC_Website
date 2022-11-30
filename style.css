@@ -252,8 +252,15 @@ footer {
   #NCC-img {
     width: auto;
   }
+  .info-card {
+    width: 90%;
+  }
   .info-card-content {
     flex-direction: column;
+  }
+  .info-card-content p {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .side-img {
     margin: auto;
