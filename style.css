@@ -284,6 +284,9 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  #logo {
+    max-width: 150px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -294,8 +297,8 @@ footer {
     font-size: 15px;
   }
   #nav-options a {
-    font-size: 12px;
-    margin-left: 5px;
+    font-size: 11px;
+    margin-left: 4px;
   }
 }
 
